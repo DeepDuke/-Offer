@@ -1,5 +1,5 @@
 /*
-注意类中vector的初始化方法
+注意类中vector的初始化方法，递归比较费事费空间，dp比较快。
 */
 class Solution {
 public:
