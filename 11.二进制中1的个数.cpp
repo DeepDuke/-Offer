@@ -37,3 +37,19 @@ public:
          return cnt;
      }
 };
+/*
+解法3：其实n为负整数时若不确定能不能用n&(n-1)的方法，可以这么干：把n转成unsigned int，这样就和正整数一样的操作了，
+unsigned int和int二进制一样，只是解读方式不同
+*/
+class Solution {
+public:
+     int  NumberOf1(int n) {
+         unsigned a = n;
+         int cnt = 0;
+         while(a != 0){
+             cnt++;
+             a = a & (a-1);
+         }
+         return cnt;
+     }
+};
