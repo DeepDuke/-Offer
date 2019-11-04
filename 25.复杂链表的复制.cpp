@@ -1,4 +1,8 @@
 /*
+先复制除了random以外的信息，用一个map记录新旧链表的对应关系，
+复制完整条链表后依据map来复制random信息。
+*/
+/*
 struct RandomListNode {
     int label;
     struct RandomListNode *next, *random;
